@@ -6,17 +6,9 @@ app = Flask(__name__)
 def index():
     return render_template('index.html')
 
-@app.route('/IPCamera')
+@app.route('/Configuratie')
 def IPcamera():
-    return render_template('IPCamera.html')
-
-@app.route('/IRCamera')
-def IRcamera():
-    return render_template('IRCamera.html')
-
-@app.route('/Lidar')
-def Lidar():
-    return render_template('Lidar.html')
+    return render_template('Configuratie.html')
 
 
 
