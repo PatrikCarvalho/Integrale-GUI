@@ -1,0 +1,48 @@
+{% extends 'base.html' %} {% block title %} Dashboard {% endblock %}
+
+{% block head %}
+<!-- Run the canvas function here -->
+<script src="/static/js/Canvas.js"></script>
+{% endblock head %}
+
+{% block content %}
+
+<div class="pcoded-content">
+    <div class="pcoded-inner-content">
+        <!-- [ breadcrumb ] start -->
+        <div class="page-header">
+            <div class="page-block">
+                <div class="row align-items-center">
+                    <div class="col-md-12">
+                        <div class="page-header-title">
+                            <h5 class="m-b-10">Canvas</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- [ breadcrumb ] end -->
+        <div class="main-body">
+            <div class="page-wrapper">
+                <!-- [ Main Content ] start -->
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="card">
+                            <div class="card-header">
+                                <h5>Hello card</h5>
+                            </div>
+                            <div class="card-block">
+                                <canvas id="my_canvas" width="1500" height="300"></canvas>
+                                <h2 id="status">0 | 0</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- [ Main Content ] end -->
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock content %}
